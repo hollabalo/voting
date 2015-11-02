@@ -1,0 +1,9 @@
+Voting Application
+Written in Java
+
+A RESTful API web service implementation sample for Java. User can define a set of questions that can be dispersed to consumers for them to vote on using the RESTful endpoint /VoteServlet.
+
+Application Dependencies:
+- Apache Tomcat
+
+(c) John Michael Gerona

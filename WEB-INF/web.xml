@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<web-app>
+	<display-name>Voting</display-name>
+	<description>Voting</description>
+	<servlet>
+		<servlet-name>GetAllQuestions</servlet-name>
+		<servlet-class>GetAllQuestionsServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AddQuestion</servlet-name>
+		<servlet-class>AddQuestionServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Vote</servlet-name>
+		<servlet-class>VoteServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>VoteAverage</servlet-name>
+		<servlet-class>VoteAverageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetAllQuestions</servlet-name>
+		<url-pattern>/getQuestions</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddQuestion</servlet-name>
+		<url-pattern>/addQuestion</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Vote</servlet-name>
+		<url-pattern>/vote</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>VoteAverage</servlet-name>
+		<url-pattern>/voteAverage</url-pattern>
+	</servlet-mapping>
+</web-app>
